@@ -1,19 +1,15 @@
 <template>
   <div id="home">
     <Nav></Nav>
+    <Header></Header>
   </div>
 </template>
 
-<script>
+<script setup>
 import Nav from "../components/Nav.vue";
+import Header from "../components/Header.vue";
 
 
-export default {
-  name: "Home",
-  components: {
-    Nav,
-  }
-}
 </script>
 
 <style scoped>
