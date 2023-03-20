@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { TailwindCSSVitePlugin } from 'tailwindcss-vite-plugin';
 
 
 const tailwindConfigPath = './tailwind.config.js'
@@ -8,8 +7,5 @@ const tailwindConfigPath = './tailwind.config.js'
 export default defineConfig({
   plugins: [
     vue(),
-    TailwindCSSVitePlugin({
-      config: tailwindConfigPath,
-    }),
   ],
 })

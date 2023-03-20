@@ -8,12 +8,14 @@ Node 18.13.0
 npm 9.6.1
 vue 3.2.45
 vue-router 4.1.6
+
+
 vite 4.1.0
 @vitejs/plugin-vue 4.0.0        
-tailwindcss-vite-plugin 0.0.6
-tailwindcss 3.2.7
+tailwindcss 3.2.7    
+(abort)tailwind-vite-plugin 0.6.0   had some bugs
 
 ## doc
 https://vitejs.dev/guide/
-
+https://tailwindcss.com/docs/guides/vite#vue
 ## reference
