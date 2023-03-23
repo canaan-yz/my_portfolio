@@ -29,9 +29,33 @@
 
 <script setup>
 import Layout from "../components/Layout.vue";
-
+import {MapPinIcon } from '@heroicons/vue/24/outline'
 </script>
 
 <style scoped>
+@font-face {
+  font-family: Pacifico;
+  src: url("../assets/font/Pacifico.ttf");
+}
+._big_title {
+  font-family: Pacifico, cursive;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+@keyframes shake-hand {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+._shake-hand-animation {
+  transform-origin: bottom right;
+  animation: shake-hand 4s ease infinite;
+}
 
 </style>
