@@ -1,10 +1,10 @@
 <!--power by component https://tailwindui.com/components/marketing/sections/heroes-->
 
 <template>
-  <div id="header" class="bg-white">
-    <header class="fixed inset-x-0 top-0 z-50 backdrop-blur-sm">
-      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div class="flex lg:flex-1 items-center">
+  <header id="header" name="header" class="bg-white min-h-screen">
+    <nav name="nav" class="fixed inset-x-0 top-0 z-50 backdrop-blur-sm">
+      <div class="flex items-center justify-between p-6 md:px-8" aria-label="Global">
+        <div class="flex md:flex-1 items-center">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Yang Zheng</span>
             <img class="h-8 w-auto hover:rotate-180 transition-transform duration-1000"
@@ -12,24 +12,24 @@
           </a>
           <div class="text-2xl text-stone-500 ml-2">Portfolio</div>
         </div>
-        <div class="flex lg:hidden">
+        <div class="flex md:hidden">
           <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = true">
             <span class="sr-only">Open main menu</span>
             <Bars3Icon class="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
+        <div class="hidden md:flex md:gap-x-12">
 <!--          <a v-for="item in navigation" :key="item.name" :href="item.href" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">{{ item.name }}</a>-->
           <router-link class="text-sm font-semibold leading-6 text-gray-900 hover:text-gray-500 duration-500 " active-class="text-gray-500 shadow-sm"
                        v-for="item in navigation" :key="item.name" :to="item.href" >
             {{ item.name }}
           </router-link>
         </div>
-<!--        <div class="hidden lg:flex lg:flex-1 lg:justify-end">-->
+<!--        <div class="hidden md:flex md:flex-1 md:justify-end">-->
 <!--          <a href="/" class="text-sm font-semibold leading-6 text-gray-900">Hot&rarr;</a>-->
 <!--        </div>-->
-      </nav>
-      <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
+      </div>
+      <Dialog as="div" class="md:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
         <div class="fixed inset-0 z-50" />
         <DialogPanel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div class="flex items-center justify-between">
@@ -50,45 +50,30 @@
           </div>
         </DialogPanel>
       </Dialog>
-    </header>
+    </nav>
 
-    <!-- background blur svg -->
-    <div class="relative isolate px-6 pt-14 lg:px-8"><!--isolate mix-blend-mode only mix in father element edge-->
-      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-        <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678">
-          <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fill-opacity=".3"
+    <!-- background top half, blur svg -->
+    <div name="bg-top-half" class="relative isolate px-6 pt-14 md:px-8"><!--isolate mix-blend-mode only mix in father element edge-->
+      <div class="absolute -z-10 inset-x-0 -top-40 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+        <svg class="relative left-[calc(50%-11rem)] -z-10 h-[21rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42rem]" viewBox="0 0 1155 678">
+          <path fill="url(#svg45de2b6b)" fill-opacity=".3"
                 d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
           <defs>
-            <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+            <linearGradient id="svg45de2b6b" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
               <stop stop-color="#9089FC" />
               <stop offset="1" stop-color="#FF80B5" />
             </linearGradient>
           </defs>
         </svg>
       </div>
-      <!--big title-->
-      <div class="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
-        <div class="text-center">
-          <h1 class="text-4xl tracking-tight text-gray-900 sm:text-6xl">
-            <span class="_shake-hand-animation inline-block sm:text-5xl">👋🏼</span>
-            <span class="_big_title" title='/ʈʂɤŋ/ /jæŋ/ pronounce similar to "Jane Young"'>
-              Hello, I'm Zheng Yang</span><br/>
-            <p class="sm:text-5xl mt-4 leading-8">A Python Fullstack Engineer</p>
-          </h1>
-          <p class="mt-4 text-lg leading-8 text-gray-600">
-            Major in Web Backend development & Programing Teaching, with a little UI background.
-          </p>
-          <p class="mt-1 text-lg leading-8 text-gray-600">
-            <MapPinIcon class="w-7 h-7 inline-block"></MapPinIcon>Based in China ZhengZhou, work for remote.
-          </p>
-          <div class="mt-2 flex items-center justify-center gap-x-6">
-<!--            <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>-->
-            <router-link to="/portfolio" class="text-sm font-semibold leading-4 text-gray-800 hover:translate-x-1 duration-500">
-              Learn more <span aria-hidden="true" class="">→</span></router-link>
-          </div>
-        </div>
-      </div>
-      <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
+
+
+      <!--main content slot-->
+      <slot id="main-content"></slot>
+
+
+      <!--background bottom half-->
+      <div name="bg-bottom-half" class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
         <svg class="relative left-[calc(50%+3rem)] h-[21.1875rem] max-w-none -translate-x-1/2 sm:left-[calc(50%+36rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678">
           <path fill="url(#ecb5b0c9-546c-4772-8c71-4d3f06d544bc)" fill-opacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
           <defs>
@@ -100,7 +85,19 @@
         </svg>
       </div>
     </div>
-  </div>
+  </header>
+
+  <footer id="footer" class="bg-gray-100 bg-opacity-20 shadow m-4 mx-0 mb-0">
+    <div class="w-full mx-auto container md:p-6 p-4 md:flex md:items-center md:justify-between text-gray-500">
+      <span class="text-sm sm:text-center">© 2023 YangZheng.</span>
+      <span class="text-sm sm:text-center">powered by Vue3+Tailwindcss. </span>
+      <!--      <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">-->
+      <!--        <li>-->
+      <!--          <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>-->
+      <!--        </li>-->
+      <!--      </ul>-->
+    </div>
+  </footer>
 </template>
 
 <script setup>

@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Header from "../components/Header.vue";
+import Header from "../components/Layout.vue";
 export default {
   name: "Portfolio",
   components: {Header}
