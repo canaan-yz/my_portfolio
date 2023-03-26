@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div id="contact" class="mt-20 container items-center flex flex-col justify-center place-self-center bg-transparent">
+    <div id="contact" class="container items-center flex flex-col justify-center place-self-center bg-transparent">
       <h1 class="text-gray-800 sm:text-4xl mt-10">Contract Me</h1>
       <h4 class="text-gray-500 text-xl mt-2">welcome to talk to me about technology or employment</h4>
       <img :src="contactIllustration" class="max-w-xl lg:max-w-2xl mt-20 px-10 rounded-sm">

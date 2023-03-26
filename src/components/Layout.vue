@@ -2,7 +2,7 @@
 
 <template>
   <header name="header" class="bg-transparent">
-    <nav name="nav" class="fixed inset-x-0 top-0 z-50 backdrop-blur-sm">
+    <nav name="nav" class="fixed inset-x-0 top-0 z-50 backdrop-blur-sm bg-transparent">
       <div class="flex items-center justify-between p-6 md:px-8" aria-label="Global">
         <div class="flex md:flex-1 items-center">
           <a href="#" class="-m-1.5 p-1.5">
@@ -53,15 +53,16 @@
 
 
   <!--main content slot-->
-  <div id="main-content" class="min-h-screen">
-    <div class="backdrop-blur-3xl min-h-screen">
-      <!--set margin-top in slot content coz of fixed navbar. slot can't set class attr-->
+  <!--set margin-top in slot content coz of fixed navbar. slot can't set class attr-->
+  <!--can't set root bg blur conflict with nav blur. -->
+  <div id="main-content" class="min-h-screen ">
+    <div class="backdrop-blur-3xl h-screen pt-20">
       <slot></slot>
     </div>
   </div>
 
 
-  <footer name="footer" class="_footer-pattern bg-gray-100 bg-opacity-10 m-4 mx-0 mb-0">
+  <footer name="footer" class="_footer-pattern bg-gray-100 bg-opacity-0 m-4 mx-0 mb-0">
     <div class="w-full mx-auto container md:p-6 p-4 md:flex md:items-center md:justify-between text-gray-500">
       <span class="text-sm sm:text-center">© 2023 YangZheng.</span>
       <span class="text-sm sm:text-center">powered by Vue3+Tailwindcss. </span>
@@ -89,16 +90,16 @@ const mobileMenuOpen = ref(false)
 #main-content{
   width:100%;
   height:100%;
-  position: relative;
-  background: url('../assets/image/bg-top.svg') no-repeat 10vw 10vh,
-              url('../assets/image/bg-top.svg') no-repeat 60vw 45vh;
-  background-size: 30% 30%;
-  z-index:-10;
+  /*position: relative;*/
+  background: url('../assets/image/bg-top.svg') no-repeat 0vw 0vh,
+              url('../assets/image/bg-top.svg') no-repeat 80vw 45vh;
+  background-size: 50% 50%;
+  z-index:0;
 }
 
 
 ._footer-pattern {
   /*patterns https://heropatterns.com/    adjust color opacity in svg file */
-  background-image: url("../assets/image/pattern-hideout.svg");
+  background-image: url("../assets/image/bg-footer-pattern.svg");
 }
 </style>

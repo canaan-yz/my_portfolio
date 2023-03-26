@@ -1,5 +1,5 @@
 <template>
-  <div name="card" class="flex justify-center">
+  <div name="work-card" class="flex justify-center">
     <div
         class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
       <a href="#!" data-te-ripple-init data-te-ripple-color="light">
@@ -11,7 +11,7 @@
       <div class="p-6">
         <h5
             class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-          Card title
+          {{ work.title }}
         </h5>
         <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
           Some quick example text to build on the card title and make up the
@@ -31,7 +31,16 @@
 
 <script>
 export default {
-  name: "Card"
+  name: "Work",
+  props: {
+    work: {
+      type: Object,
+      default: {
+        title: null
+
+      }
+    }
+  }
 }
 </script>
 

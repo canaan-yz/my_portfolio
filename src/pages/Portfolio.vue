@@ -1,12 +1,12 @@
 <template>
   <Layout>
-    <div id="portfolio" class="mt-20 container flex flex-col text-center items-center bg-transparent">
+    <div id="portfolio" class="container flex flex-col text-center items-center bg-transparent">
       <div name="title">
         <h1 class="text-gray-800 sm:text-4xl mt-10">Beside Works</h1>
-        <h4 class="text-gray-500 text-md mt-2 ">
-        The complexity of these works are much easier than formal full-time work, but also show the ability of mine.<br/>
-        Some are achitecture research; Some are part-time private work with novelty needs; Some come from my full-time work.<br/>
-        </h4>
+        <p class="text-gray-500 text-md mt-2 ">
+        Some works are part-time private work with novelty needs; Some for architecture research; Some come from my full-time work.<br/>
+        The complexity of these beside works are much easier than formal full-time work, but also show my abilities. See my formal work experiences on my resume.<br/>
+        </p>
       </div>
 
       <div name="portfolio-illustration" class="absolute opacity-30 -z-10 -left-20 top-40 w-96 ">
@@ -31,7 +31,9 @@
 
       <section name="cards" class="w-3/4 mt-10 border-2 flex flex-row flex-wrap justify-center gap-8">
         <!-- component class values will append to component root element class values, no need pass props-->
-        <Card v-for="(card,i) in cards" class=""></Card>
+        <Work v-for="(work,i) in works" :key="i" class=""
+              :work="work">
+        </Work>
       </section>
     </div>
   </Layout>
@@ -41,7 +43,10 @@
 <script setup>
 import {ref} from "vue";// similar to react useState?
 import Layout from "../components/Layout.vue";
-import Card from "../components/Card.vue";
+import Work from "../components/Work.vue";
+
+import works from "../_works_info/works.js";
+
 import portfolioIllustration from '../assets/image/portfolio_illustration.svg'
 import {AcademicCapIcon, CodeBracketIcon, Squares2X2Icon, PhotoIcon, CircleStackIcon, CpuChipIcon,
   ComputerDesktopIcon, ArrowTopRightOnSquareIcon, CubeTransparentIcon, DocumentIcon,} from '@heroicons/vue/24/outline'
@@ -72,10 +77,10 @@ const catalogs = [
     'name': 'UI',
     'iconComponent': PhotoIcon
   },
-
 ]
+
 let currentCatalogIndex = ref(0)
-const cards = [1,2,3]
+
 
 const handleCatalogClick = function(i, catalog, event) {
   // notice 'this' in anonymous function ()=> is not refer to component object,use ordinary function and ref()
