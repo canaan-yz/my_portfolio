@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+// https://github.com/wangzongming/
+import vitePluginRequire from "vite-plugin-require";
 
 
 const tailwindConfigPath = './tailwind.config.js'
@@ -7,5 +9,6 @@ const tailwindConfigPath = './tailwind.config.js'
 export default defineConfig({
   plugins: [
     vue(),
+    vitePluginRequire.default(), // sometimes need .default()
   ],
 })
