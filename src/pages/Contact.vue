@@ -1,15 +1,15 @@
 <template>
   <Layout>
-    <div id="contact" class="container items-center flex flex-col justify-center place-self-center bg-transparent">
-      <h1 class="text-gray-800 sm:text-4xl mt-10">Contract Me</h1>
-      <h4 class="text-gray-500 text-xl mt-2">welcome to talk to me about technology or employment</h4>
+    <div id="contact" class="container mx-auto items-center flex flex-col justify-center place-self-center bg-transparent">
+      <h1 class="text-neutral-800 sm:text-4xl mt-10">Contract Me</h1>
+      <h4 class="text-neutral-500 text-xl mt-2">welcome to talk to me about technology or employment</h4>
       <img :src="contactIllustration" class="max-w-xl lg:max-w-2xl mt-20 px-10 rounded-sm">
       <ul class="mt-20 w-1/2 flex flex-row justify-between flex-wrap">
         <!--social media-->
         <li v-for="(s,i) in socials" class="mb-4" :key="s.name" :data-content="s.note"><!--H5 data- bind value to css pseudo class-->
           <a :href="s.href" class="block" target="_blank">
-            <button type="button" class="md:w-28 w-48 px-2 py-2 text-sm text-left text-gray-900 font-medium bg-transparent border-2 rounded-md border-gray-900
-  hover:bg-gray-100">
+            <button type="button" class="md:w-28 w-48 px-2 py-2 text-sm text-left text-neutral-900 font-medium bg-transparent border-2 rounded-md border-neutral-900
+  hover:bg-neutral-100">
               <img :src="s.iconSrc" class="w-5 h-5 mr-2 inline-block float-left">
               <span class="text-left">{{ s.name }}</span>
               <span class="">{{s.title}}</span>

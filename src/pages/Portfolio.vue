@@ -1,9 +1,9 @@
 <template>
   <Layout>
-    <div id="portfolio" class="container flex flex-col text-center items-center bg-transparent">
+    <div id="portfolio" class="w-3/4 mx-auto flex flex-col text-center items-center bg-transparent">
       <div name="title">
-        <h1 class="text-gray-800 sm:text-4xl mt-10">Beside Works</h1>
-        <p class="text-gray-500 text-md mt-2 ">
+        <h1 class="text-neutral-800 sm:text-4xl mt-10">Beside Works</h1>
+        <p class="text-neutral-500 text-md mt-2 ">
         Some works are part-time private work with novelty needs; Some for architecture research; Some come from my full-time work.<br/>
         The complexity of these beside works are much easier than formal full-time work, but also show my abilities. See my formal work experiences on my resume.<br/>
         </p>
@@ -17,8 +17,8 @@
         <ul class="mt-20 flex flex-wrap items-center justify-between">
           <li v-for="(item,i) in catalogs"
               :key="item.name"
-              class="mr-6 text-gray-700 hover:text-gray-500 "
-              :class="{'border-b-2 border-gray-500': i===currentCatalogIndex}"
+              class="m-3 text-neutral-700 hover:text-neutral-500 "
+              :class="{'border-b-2 border-neutral-500': i===currentCatalogIndex}"
               @click="handleCatalogClick(i, item, $event)"
           >
             <a :href=null class="flex">
