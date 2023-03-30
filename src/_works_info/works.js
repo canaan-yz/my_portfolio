@@ -6,16 +6,16 @@ let works = [
     title: 'portfolio website(previous version)',
     catalog: ['Frontend'],
     cover_src: require('./portfolio_old/cover.png'),  //vite-plugin-require
-    year: 2020,
+    year: 2019,
     tech_stack: ['Vue2', 'Vue-CLI3', 'Bulma', 'Buefy', 'Webpack4'],
     git_link: 'https://github.com/',    // the order of links is fixed
     doc_link: '/works_info/portfolio_old',
     demo_link: null
   },
   {
-    name: 'portfolio_old',
-    title: 'portfolio website(previous version)',
-    catalog: ['Frontend'],
+    name: 'portfolio_old2',
+    title: 'portfolio website2(previous version)',
+    catalog: ['Teaching', 'Frontend'],
     cover_src: require('./portfolio_old/cover.png'),  //vite-plugin-require
     year: 2020,
     tech_stack: ['Vue2', 'Vue-CLI3', 'Bulma', 'Buefy', 'Webpack4'],
@@ -24,11 +24,11 @@ let works = [
     demo_link: null
   },
   {
-    name: 'portfolio_old',
-    title: 'portfolio website(previous version)',
-    catalog: ['Frontend'],
+    name: 'portfolio_old3',
+    title: 'portfolio website3(previous version)',
+    catalog: ['Backend'],
     cover_src: require('./portfolio_old/cover.png'),  //vite-plugin-require
-    year: 2020,
+    year: 2021,
     tech_stack: ['Vue2', 'Vue-CLI3', 'Bulma', 'Buefy', 'Webpack4'],
     git_link: 'https://github.com/',    // the order of links is fixed
     doc_link: '/works_info/portfolio_old',
@@ -36,13 +36,5 @@ let works = [
   },
 ]
 
-// relative path to Portfolio.vue
-// const works_info_relative_path = '../_works_info'
-// works.map((w, i)=>{
-//
-//   w.cover_src = `../_works_info/${w.name}/cover.png`
-//
-// });
-// console.log(works)
 
 export default works;

@@ -2,7 +2,10 @@
   <Layout>
     <div id="portfolio" class="w-3/4 mx-auto flex flex-col text-center items-center bg-transparent">
       <div name="title">
-        <h1 class="text-neutral-800 sm:text-4xl mt-10">Beside Works</h1>
+        <h1 class="text-neutral-800 sm:text-4xl mt-10">
+            Beside Works
+        </h1>
+        <span class="text-sm">(live demo will be launched recently)<!-- todo delete--></span>
         <p class="text-neutral-500 text-md mt-2 ">
         Some works are part-time private work with novelty needs; Some for architecture research; Some come from my full-time work.<br/>
         The complexity of these beside works are much easier than formal full-time work, but also show my abilities. See my formal work experiences on my resume.<br/>
@@ -29,9 +32,9 @@
         </ul>
       </section>
 
-      <section name="cards" class="w-3/4 mt-10 border-2 flex flex-row flex-wrap justify-center gap-8">
-        <!-- component class values will append to component root element class values, no need pass props-->
-        <Work v-for="(work,i) in works" :key="i" class=""
+      <section name="cards" class="w-3/4 mt-10 flex flex-row flex-wrap justify-around gap-y-20">
+<!--         component class values will append to component root element class values, no need pass props-->
+        <Work v-for="(work,i) in filteredWorks" :key="i" class=""
               :work="work">
         </Work>
       </section>
@@ -41,7 +44,7 @@
 
 
 <script setup>
-import {ref} from "vue";// similar to react useState?
+import {computed, ref} from "vue";// similar to react useState?
 import Layout from "../components/Layout.vue";
 import Work from "../components/Work.vue";
 
@@ -82,12 +85,32 @@ const catalogs = [
 let currentCatalogIndex = ref(0)
 
 
+// methods
 const handleCatalogClick = function(i, catalog, event) {
   // notice 'this' in anonymous function ()=> is not refer to component object,use ordinary function and ref()
-  // console.log(i, catalog, event)
   currentCatalogIndex.value = i
+  console.log(i, catalog.name)
 }
 
+// computed
+const filteredWorks = computed({
+  // click catalog, and filter works
+  // calling after handleCatalogClick() currentCatalogIndex changed
+  get: ()=>{
+    let filteredWorks = []
+    let currentCatalogName = catalogs[currentCatalogIndex.value]['name']
+    if (currentCatalogName==='All'){
+      filteredWorks = works
+    } else {
+      filteredWorks = works.filter((work)=>{
+        if (work.catalog.indexOf(currentCatalogName)!==-1){
+          return work
+        }
+      })
+    }
+    return filteredWorks
+  }
+})
 </script>
 
 <style scoped>
