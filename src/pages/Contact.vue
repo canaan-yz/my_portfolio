@@ -23,7 +23,7 @@
 </template>
 
 <script setup>
-import Layout from "../components/Layout.vue";
+import Layout from "./Layout.vue";
 import contactIllustration from '../assets/image/contact_illustration.svg';
 // icons https://feathericons.dev/?iconset=brands    hereicons has no social media icons.
 import emailIcon from '../assets/image/social_media/email.svg';

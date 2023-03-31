@@ -28,7 +28,7 @@
 </template>
 
 <script setup>
-import Layout from "../components/Layout.vue";
+import Layout from "./Layout.vue";
 import {MapPinIcon } from '@heroicons/vue/24/outline'
 </script>
 

@@ -1,3 +1,10 @@
+## todo 
+
+
+check mobile device popup notice
+modify contact illustration people skin to varies of
+delete portfolio.vue 8th line
+
 ## command
 (optional) npm install -g nrm & nrm use taobao
 npm create vite@latest name-of-your-project -- --template vue

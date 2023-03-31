@@ -5,7 +5,7 @@
         <h1 class="text-neutral-800 sm:text-4xl mt-10">
             Beside Works
         </h1>
-        <span class="text-sm">(live demo will be launched recently)<!-- todo delete--></span>
+        <span class="text-sm">(live demo will be launched recently)</span>
         <p class="text-neutral-500 text-md mt-2 ">
         Some works are part-time private work with novelty needs; Some for architecture research; Some come from my full-time work.<br/>
         The complexity of these beside works are much easier than formal full-time work, but also show my abilities. See my formal work experiences on my resume.<br/>
@@ -32,8 +32,9 @@
         </ul>
       </section>
 
-      <section name="cards" class="w-3/4 mt-10 flex flex-row flex-wrap justify-around gap-y-20">
-<!--         component class values will append to component root element class values, no need pass props-->
+      <section name="cards" class="w-4/5 mt-10 flex flex-row flex-wrap justify-center gap-10">
+        <!--the effect of justify-around not good on different width screen-->
+        <!--component class values will append to component root element class values, no need pass props-->
         <Work v-for="(work,i) in filteredWorks" :key="i" class=""
               :work="work">
         </Work>
@@ -45,10 +46,10 @@
 
 <script setup>
 import {computed, ref} from "vue";// similar to react useState?
-import Layout from "../components/Layout.vue";
-import Work from "../components/Work.vue";
+import Layout from "./Layout.vue";
+import Work from "../components/WorkCard.vue";
 
-import works from "../_works_info/works.js";
+import works from "../_portfolio_info/works.js";
 
 import portfolioIllustration from '../assets/image/portfolio_illustration.svg'
 import {AcademicCapIcon, CodeBracketIcon, Squares2X2Icon, PhotoIcon, CircleStackIcon, CpuChipIcon,
@@ -89,7 +90,7 @@ let currentCatalogIndex = ref(0)
 const handleCatalogClick = function(i, catalog, event) {
   // notice 'this' in anonymous function ()=> is not refer to component object,use ordinary function and ref()
   currentCatalogIndex.value = i
-  console.log(i, catalog.name)
+  // console.log(i, catalog.name)
 }
 
 // computed

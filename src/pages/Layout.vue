@@ -57,7 +57,7 @@
   <div id="main-content" class="min-h-screen">
     <!--set enough height to prop up the blur tier, can't set margin otherwise it will lightly cut a corner of blur background.
     can't set root element bg blur conflict with nav blur. -->
-    <div class="backdrop-blur-3xl min-h-[120vh] pt-20">
+    <div class="backdrop-blur-3xl min-h-[120vh] w-full pt-20">
       <slot></slot>
     </div>
   </div>
