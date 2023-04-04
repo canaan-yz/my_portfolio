@@ -32,7 +32,7 @@
         </ul>
       </section>
 
-      <section name="cards" class="w-4/5 mt-10 flex flex-row flex-wrap justify-center gap-10">
+      <section name="cards" class="w-4/5 mt-10 mb-32 flex flex-row flex-wrap justify-center gap-10">
         <!--the effect of justify-around not good on different width screen-->
         <!--component class values will append to component root element class values, no need pass props-->
         <Work v-for="(work,i) in filteredWorks" :key="i" class=""

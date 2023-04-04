@@ -63,7 +63,7 @@
   </div>
 
 
-  <footer name="footer" class="bg-transparent -z-10 mt-0 border-t-2 border-neutral-50">
+  <footer name="footer" class="bg-transparent border-t-2 border-neutral-50">
     <div class="w-full mx-auto container md:p-6 p-4 md:flex md:items-center md:justify-between text-neutral-500">
       <span class="text-sm sm:text-center">©Copyright 2023 YangZheng.</span>
       <span class="text-sm sm:text-center">powered by Vue3+Tailwindcss+Vite.</span>
