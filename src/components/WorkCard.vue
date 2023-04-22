@@ -10,13 +10,13 @@
           {{ work.title }}
         </h5>
         <p name="tech-stack" class="h-8 mb-4 text-base text-neutral-600 overflow-scroll">
-          <button v-for="(tech, i) in work.tech_stack" class="bg-neutral-100 mr-1 md-1 px-1 py-0.5 text-sm text-neutral-500 rounded-sm">{{tech}}</button>
+          <span v-for="(tech, i) in work.tech_stack" class="bg-neutral-100 mr-1 md-1 px-1 py-0.5 text-sm text-neutral-500 rounded-sm">{{tech}}</span>
         </p>
         <p name="external-links" class="flex flex-nowrap justify-around">
             <a v-for="(item, i) in links"
                :key="i"
                :href="item['link']" target="_blank"
-               :class="{'hover:shadow-xl hover:bg-neutral-100 duration-75 rounded-xl': item['link']}" class="p-1">
+               :class="{'hover:shadow hover:bg-neutral-100 duration-75 rounded-xl': item['link']}" class="p-1">
               <component :is="item['icon']" class="w-8" :class="[item['link'] ? 'stroke-neutral-700': 'stroke-neutral-100']"/>
             </a>
         </p>

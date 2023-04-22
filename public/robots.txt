@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /_resume/
+Disallow: /_portfolio_info/

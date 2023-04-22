@@ -15,20 +15,20 @@
       <!--grid-rows-cv-layout tailwind.config.cjs -->
       <article id="A4" class="mx-auto w-[210mm] h-[297mm] xl:scale-150 origin-top bg-white shadow-md px-14 py-6
                       text-neutral-700 text-xs font-light leading-4 text-left subpixel-antialiased
-                      grid grid-flow-col grid-rows-24 grid-cols-3 gap-2">
+                      grid grid-flow-col grid-rows-24 grid-cols-3 gap-2 gap-x-6">
 
         <section name="header" class="row-span-2 col-span-full">
           <h1 class="text-2xl font-semibold text-neutral-900">Zheng Yang</h1>
           <h2 class="">Python Web Engineer/Full-Stack Developer/Programming Teacher</h2>
           <p class="">
-            <AtSymbolIcon class="w-4 inline-block"/>canaanyangzheng@gmail.com&nbsp;
-            <LinkIcon class="w-4 inline-block"/>www.1owo.com&nbsp;
+            <EnvelopeIcon class="w-4 inline-block"/>zyzy.py@gmail.com&nbsp;
+            <LinkIcon class="w-4 inline-block"/>www..com&nbsp;
             <MapPinIcon class="w-4 inline-block"/>ZhengZhou,China&nbsp;
-            <DevicePhoneMobileIcon class="w-4 inline-block"/>+86-13733177926 (00:00~13:00 UTC)&nbsp;
+            <DevicePhoneMobileIcon class="w-4 inline-block"/>+1- (00:00~13:00 UTC)&nbsp;
           </p>
         </section>
 
-        <section name="summery" class="row-span-2 col-span-2 bg-blue-200">
+        <section name="summery" class="row-span-2 col-span-2">
           <div>
             <h2 class="text-sm font-semibold text-neutral-700">Summery</h2>
             <p class="">
@@ -38,13 +38,13 @@
           </div>
         </section>
 
-        <section name="experience" class="row-span-20 col-span-2 group bg-blue-50">
+        <section name="experience" class="row-span-20 col-span-2 group">
           <h2 class="">Experience</h2>
             <ol name="Teaching" class="">
               <li class="">
                 <div class=""></div>
                 <time class="">2022</time>
-                <h3 class="ml-4">Beijing XueJiaAo Education</h3><span class="ml-4">Programming Teacher</span>
+                <h3 class="">Beijing XueJiaAo Education</h3><span class="">Programming Teacher</span>
                 <h4 class="">Company Introduction:</h4>
                 <p class="">
                   The unique authorization of Oracle Education in China, operate IT training and school-enterprise cooperation teaching.
@@ -74,10 +74,10 @@
                 <li class="">
                     <div class=""></div>
                     <time class="">2017</time>
-                    <h3 class="ml-4">LongQi Wig</h3><span class="ml-4">ERP Odoo Developer</span>
+                    <h3 class="">LongQi Wig</h3><span class="">ERP Developer</span>
                     <h4 class="">Company Introduction:</h4>
                     <p class="">
-                        Xuchang, China has the advantage of the lowest price of wig in the world. Through foreign trade,
+                        Xuchang has the advantage of the lowest price of wig in the world. Through foreign trade,
                         the company has grown rapidly. Opened more than 20 stores including self-operated malls,
                         eBay stores, Amazon stores, and AliExpress stores, and placed advertisements on Google and YouTube.
                         No matter where you buy wigs online, it's the same boss behind.
@@ -100,7 +100,7 @@
                 <li class="">
                     <div class=""></div>
                     <time class="">2015</time>
-                    <h3 class="ml-4">Synchronized Classroom</h3><span class="ml-4">Python Backend Developer</span>
+                    <h3 class="">Synchronized Classroom</h3><span class="">Python Backend Developer</span>
                     <h4 class="">Company Introduction:</h4>
                     <p class="">
                       A primary education app, including subjects such as Chinese, mathematics, and English.
@@ -124,7 +124,7 @@
                 <li class="">
                     <div class=""></div>
                     <time class="">2014</time>
-                    <h3 class="ml-4">UI related</h3><span class="ml-4">UI Designer</span>
+                    <h3 class="">UI related</h3><span class="">UI Designer</span>
                     <h4 class="">Company Introduction:</h4>
                     <p class="">
                       (I hidde this work to avoid that you may be confused that a backend coder did UI work.)<br/>
@@ -153,7 +153,7 @@
               <li class="">
                   <div class=""></div>
                   <time class="">2013</time>
-                  <h3 class="ml-4">Zhengzhou Dennis Department Store Co.Ltd</h3><span class="ml-4">ERP Developer</span>
+                  <h3 class="">Zhengzhou Dennis Department Store Co.Ltd</h3><span class="ml-4">ERP Developer</span>
                   <h4 class="">Company Introduction:</h4>
                   <p class="">
                     (I hide this work because space is limited in one page resume and I don't like the develop language this work used.)
@@ -173,16 +173,17 @@
             </ol>
         </section>
 
-        <section name="avatar" class="row-span-3 col-span-1">
-          <img src="" class="rounded-full">
+        <section name="avatar" class="row-span-2 col-span-1 overflow-hidden">
+            <div class="relative rounded-full w-20 h-20 overflow-hidden mx-auto">
+              <img :src="AvatarSrc" class="absolute transform scale-150 top-7 left-1" alt="avatar">
+            </div>
         </section>
 
-        <section name="skill" class="row-span-11 col-span-1 bg-blue-50">
+        <section name="skill" class="row-span-10 col-span-1">
           <h2>Skill</h2>
           <ul>
             <li>
-                <h4>legend</h4>
-                <span class="_a">proficient</span><span class="_b">experienced</span><span class="_c">understand</span><span class="_z">lack energy or dislike</span>
+              <span class="_a">proficient</span><span class="_b">experienced</span><span class="_c">understand</span><span class="_c _z">lack energy or dislike</span>
             </li>
             <li>
               <h4 class="mt-0">Production</h4>
@@ -194,23 +195,23 @@
               <span class="_b">Vite Webpack</span>
             </li>
             <li>
-              <h4 class="">Backend(mainly)</h4>
+              <h4 class="">Backend</h4>
               <span class="_a">Django</span><span class="_a">Flask</span><span class="_b">FastAPI</span><span class="_b">Odoo</span><span class="_c _z">tornado</span>
               <span class="_b _z">Scrapy</span><span class="_b _z">Selenium</span><br/>
               <span class="_a">Postgresql</span><span class="_a">MySQL</span><span class="_b _z">Oracle</span><span class="_a">SQL</span><span class="_b">MongoDB</span><span class="_c">Redis</span><br/>
+            </li>
+            <li>
+                <h4 class="">Deployment</h4>
+                <span class="_b">Linux/Ubuntu</span><span class="_b">Docker</span><span class="_b">CI CD</span><span class="_b">AWS/Alibaba Cloud</span>
             </li>
             <li>
               <h4 class="">Coordination</h4>
               <span class="_a">Git</span><span class="_b">Jira/Github Actions</span>
             </li>
             <li>
-              <h4 class="">Deployment</h4>
-              <span class="_b">Linux/Ubuntu</span><span class="_b">Docker</span><span class="_b">CI CD</span><span class="_b">AWS/Alibaba Cloud</span>
-            </li>
-            <li>
-                <h4 class="">Others</h4>
-                <span class="_a">RaspberryPi/sensors</span><span class="_c">Rack Server</span><span class="_c _z">Virtualization</span>
-                <span class="_b _z">Crawler</span><span class="_c _z">AI</span><span class="_c _z">Automated Maintenance</span>
+              <h4 class="">Others</h4>
+              <span class="_a">RaspberryPi/sensors</span><span class="_c">Rack Server</span><span class="_b _z">Crawler</span>
+              <span class="_c _z">Scientific Computing</span><span class="_c _z">AI</span><span class="_c _z">Automated Maintenance</span>
             </li>
 
           </ul>
@@ -237,7 +238,7 @@
           </ul>
         </section>
 
-        <section name="language" class="row-span-3 col-span-1">
+        <section name="language" class="row-span-2 col-span-1">
           <h2>Language</h2>
           <ul>
             <li class="mb-1">
@@ -245,34 +246,91 @@
                 <span class="">reading/writing</span><span class="float-right">influence</span><br/>
                 <span class="">listening/speaking</span><span class="float-right">limited</span>
             </li>
-            <li class="mb-1">
-                <h3>Chinese</h3><span class="float-right">mother tongue</span><br/>
-            </li>
           </ul>
         </section>
 
+        <section name="habit" class="row-span-1 col-span-1 group">
+          <div class="hidden group-hover:block">
+            <h2>Habit</h2>
+            <span>Social News</span><span>Game</span><span>Japanese Animation</span><span></span>
+          </div>
+        </section>
+
+        <section name="political standpoint" class="row-span-2 col-span-1 group">
+            <div class="hidden group-hover:block">
+                <h2>Political Standpoint</h2>
+                <p>Stands with democracy, Against dictatorship.</p>
+            </div>
+        </section>
+
       </article>
+
+      <!-- todo: download resume PDF -->
+      <!-- The html2pdf/html2canvas jspdf/ libraries conflict with tailwindCSS.
+          Manually maintained: browser mouse right click and print, place .pdf file in project/pulic/_resume-->
+      <a href="/_resume/YangZheng's Portfolio.pdf" download="ZhengYang_Python_Resume.pdf" class="" target="_blank" >
+        <button class="border-2 border-neutral-700 text-neutral-700 rounded-md px-4 py-1 mt-4 text-2xl block mx-auto
+                      hover:border-neutral-500 hover:text-neutral-500 hover:bg-neutral-100 ">
+            download CV
+        </button>
+      </a>
     </div>
   </Layout>
 </template>
 
 <script setup>
+import {ref} from "vue";
+
 import Layout from './Layout.vue'
 import Popover from '../components/Popover.vue'
-import {DevicePhoneMobileIcon, AtSymbolIcon, MapPinIcon, LinkIcon } from "@heroicons/vue/24/outline";
+import {AtSymbolIcon, EnvelopeIcon, LinkIcon, MapPinIcon, DevicePhoneMobileIcon, } from "@heroicons/vue/24/outline";
+import AvatarSrc from '../assets/image/resume_avatar.jpg'
 
 </script>
+
+<script>
+// vue3-html2pdf high-level lib will destroy generally style.
+// html2canvas jspdf low-level lib incompatible with tailwindcss h1(probably cause by line height) and through line.
+
+
+// import html2canvas from 'html2canvas'
+// import JsPDF from 'jspdf'
+//
+// export default {
+//   methods: {
+//     printResume(){
+//       html2canvas(document.getElementById('A4')).then(canvas => {
+//         let pageData = canvas.toDataURL('image/jpeg', 1.0)
+//         // default portrait oriented, a4[210mm,297mm]，keep proportion zoom
+//         let pdf = new JsPDF('', 'mm', 'a4')
+//         pdf.addImage(pageData, 'JPEG', 0, 0, 210, 210 / canvas.width * canvas.height)
+//         pdf.save('resume.pdf')
+//       })
+//     }
+//   },
+// }
+
+
+// raw window.print() has margin, excessive header, no args, need coop with css @media print {display}.
+// export default {
+//   methods: {
+//     printResume() {
+//       window.print()
+//     }
+//   }
+// }
+</script>
+
 
 <style scoped lang="css">
 /*CSS nesting support https://tailwindcss.com/docs/using-with-preprocessors#nesting*/
 article{
-  /*background: url("./Screenshot.png");*/
-  background-size: contain;
+  /*background: url('../assets/image/resume_a4_bg.svg') no-repeat;*/
   /*filter: opacity(0.5);*/
   & section{
     @apply bg-blue-50;
     & h2{
-      @apply  text-sm font-medium leading-8;
+      @apply  text-sm font-medium leading-8 text-slate-500;
     }
     & h3{
       @apply  inline-block text-xs font-medium text-neutral-700;
@@ -288,7 +346,10 @@ article{
   }
   & section[name="experience"]{
     & h3{
-      @apply  ml-2;
+      @apply  ml-4;
+    }
+    & h3+span{
+        @apply  ml-4;
     }
     & p{
         @apply pl-2;
@@ -323,10 +384,10 @@ article{
       @apply  text-neutral-900;
     }
     & span._b{
-      @apply  text-neutral-600;
+      @apply  text-neutral-500;
     }
     & span._c{
-      @apply  text-neutral-400;
+      @apply  text-neutral-300;
     }
     & span._z{
       @apply  line-through;
@@ -336,5 +397,28 @@ article{
       @apply  text-neutral-200;
     }
   }
+
+  & section[name="habit"]{
+    & span:after{
+      content: '•';
+      @apply  text-neutral-200;
+    }
+  }
+}
+</style>
+
+<style>
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    #A4, #A4 * {
+        visibility: visible;
+    }
+    #A4 {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }
 </style>
