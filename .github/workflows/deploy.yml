@@ -23,7 +23,7 @@ jobs:
       - name: Install node
         uses: actions/setup-node@v3
         with:
-          node-version: lts/*
+          node-version: 18.x
       - name: Print node version
         run: |
           node -v
@@ -32,8 +32,6 @@ jobs:
         run: |
           npm install
           npm run build
-      - name: Create project dir if not exist
-        run:  mkdir -p /Apps/my_portfolio
       - name: Deploy static dist files to server via ssh ftp
         uses: easingthemes/ssh-deploy@v4.1.8
         env:
@@ -41,11 +39,12 @@ jobs:
           REMOTE_HOST: 49.4.82.110
           REMOTE_PORT: 22
           REMOTE_USER: root
-          SOURCE: dist/
-          TARGET: /App/my_portfolio/dist/
           SCRIPT_BEFORE: |
             whoami
             pwd
+            mkdir -p /Apps/my_portfolio
+          SOURCE: dist/
+          TARGET: /App/my_portfolio/dist/
           SCRIPT_AFTER: |
             ls -al
             echo $RSYNC_STDOUT
