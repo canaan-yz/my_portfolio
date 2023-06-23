@@ -10,6 +10,18 @@
         </p>
       </div>
 
+      <!-- todo: download resume PDF -->
+      <!-- The html2pdf/html2canvas jspdf/ libraries conflict with tailwindCSS.
+          Manually maintained: browser mouse right click and print, place .pdf file in project/pulic/_resume-->
+      <div class="mt-4 mb-8">
+          <button class="border-2 border-neutral-900 text-neutral-900 rounded-md px-4 py-1 text-xl block mx-auto
+                    hover:border-neutral-500 hover:text-neutral-500 hover:bg-neutral-100 ">
+            <a href="/_resume/YangZheng's Portfolio.pdf" download="ZhengYang_Python_Resume.pdf" class="" target="_blank" >
+              Download CV
+            </a>
+          </button>
+      </div>
+
       <!--A4 210mm 297mm fixed, scale 150% on full-screen, give father container enough height to prevent overflow footer.-->
       <!--for interactive effects, abandon the plan of converting Word documents to HTML first. for neat and fixed, choice grid layout.-->
       <!--grid-rows-cv-layout tailwind.config.cjs -->
@@ -18,7 +30,7 @@
                       grid grid-flow-col grid-rows-24 grid-cols-3 gap-2 gap-x-6">
 
         <section name="header" class="row-span-2 col-span-full">
-          <h1 class="text-2xl font-semibold text-neutral-900">Zheng Yang</h1>
+          <h1 class="text-2xl font-medium text-neutral-700">Zheng Yang</h1>
           <h2 class="">Python Web Engineer/Full-Stack Developer/Programming Teacher</h2>
           <p class="">
             <EnvelopeIcon class="w-4 inline-block"/>zyzy.py@gmail.com&nbsp;
@@ -264,16 +276,9 @@
         </section>
 
       </article>
+<!--        todo: popover    todo: Q&A-->
 
-      <!-- todo: download resume PDF -->
-      <!-- The html2pdf/html2canvas jspdf/ libraries conflict with tailwindCSS.
-          Manually maintained: browser mouse right click and print, place .pdf file in project/pulic/_resume-->
-      <a href="/_resume/YangZheng's Portfolio.pdf" download="ZhengYang_Python_Resume.pdf" class="" target="_blank" >
-        <button class="border-2 border-neutral-700 text-neutral-700 rounded-md px-4 py-1 mt-4 text-2xl block mx-auto
-                      hover:border-neutral-500 hover:text-neutral-500 hover:bg-neutral-100 ">
-            download CV
-        </button>
-      </a>
+
     </div>
   </Layout>
 </template>

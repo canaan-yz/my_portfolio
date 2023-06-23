@@ -7,7 +7,7 @@
           <h1 class="text-4xl tracking-tight text-neutral-900 sm:text-6xl">
             <span class="_shake-hand-animation inline-block sm:text-5xl">👋🏼</span>
             <span class="_big_title" title='/ʈʂɤŋ/ /jæŋ/ pronounce similar to "Jane Young"'>
-              Hello, I'm Zheng Yang</span><br/>
+              Hello, I'm Mr.Yang Zheng</span><br/>
             <p class="sm:text-5xl mt-4 leading-8">A Python Fullstack Engineer</p>
           </h1>
           <p class="mt-4 text-lg leading-8 text-neutral-600">
@@ -33,10 +33,8 @@ import {MapPinIcon } from '@heroicons/vue/24/outline'
 </script>
 
 <style scoped>
-@font-face {
-  font-family: Pacifico;
-  src: url("../assets/font/Pacifico.ttf");
-}
+@import url('https://fonts.cdnfonts.com/css/pacifico');
+
 ._big_title {
   font-family: Pacifico, cursive;
   font-weight: bold;

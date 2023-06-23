@@ -7,6 +7,7 @@
   </div>
 </template>
 
-<style scoped>
-
+<style>
+/* Tailwindui component specific font "Inter" */
+@import url('https://fonts.cdnfonts.com/css/inter');
 </style>

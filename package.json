@@ -9,13 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "html2canvas": "^1.4.1",
-    "jspdf": "^2.5.1",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "@headlessui/vue": "^1.7.12",
+    "@headlessui/vue": "^1.7.13",
     "@heroicons/vue": "^2.0.16",
     "@vitejs/plugin-vue": "^4.0.0",
     "autoprefixer": "^10.4.14",
