@@ -1,0 +1,54 @@
+#https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+#https://github.com/marketplace/actions/setup-node-js-environment
+#https://github.com/marketplace/actions/sftp-deploy
+#https://github.com/marketplace/actions/ssh-deploy
+
+
+name: Deployed Vue.js Project to Cloud Server via SSH
+on:
+  push:
+    branches:
+      [ main, master]
+  label:
+    types: [ created ]
+
+
+jobs:
+  job1:
+    name: job1. Build dist
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install node
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/latest
+        run: |
+          node -v
+          npm -v
+      - name: install dependencies, build, test
+        run: |
+          npm install
+          npm run build
+  job2:
+    name: job2. Deploy dist to cloud server
+    steps:
+      - name: Create project dir if not exist
+        run:  mkdir -p /Apps/my_portfolio
+      - name: Upload static dist files to server via ssh ftp
+        uses: easingthemes/ssh-deploy@4.1.8
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.HUAWEICLOUD_SSHKEY_B006 }}
+          REMOTE_HOST: 49.4.82.110
+          REMOTE_PORT: 22
+          REMOTE_USER: root
+          SOURCE: dist/
+          TARGET: /App/my_portfolio/dist/
+          SCRIPT_BEFORE: |
+            whoami
+            pwd
+          SCRIPT_AFTER: |
+            ls -al
+            echo $RSYNC_STDOUT
+            echo 'Deploy Complete'
+
