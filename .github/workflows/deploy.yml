@@ -30,7 +30,7 @@ jobs:
           npm -v
       - name: Install dependencies, Build, Test
         run: |
-          npm install
+          npm install --loglevel verbose
           npm run build
       - name: Deploy static dist files to server via ssh ftp
         uses: easingthemes/ssh-deploy@v4.1.8
