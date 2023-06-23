@@ -1,7 +1,8 @@
 #https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
 #https://github.com/marketplace/actions/setup-node-js-environment
-#https://github.com/marketplace/actions/sftp-deploy
+#https://github.com/marketplace/actions/sftp-deploy  alternative
 #https://github.com/marketplace/actions/ssh-deploy
+#Edit on GitHub online with prompt.
 
 
 name: Deployed Vue.js Project to Cloud Server via SSH
@@ -34,7 +35,7 @@ jobs:
       - name: Create project dir if not exist
         run:  mkdir -p /Apps/my_portfolio
       - name: Deploy static dist files to server via ssh ftp
-        uses: easingthemes/ssh-deploy@4.1.8
+        uses: easingthemes/ssh-deploy@v4.1.8
         env:
           SSH_PRIVATE_KEY: ${{ secrets.HUAWEICLOUD_SSHKEY_B006 }}
           REMOTE_HOST: 49.4.82.110
