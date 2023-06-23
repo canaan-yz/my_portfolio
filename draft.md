@@ -6,6 +6,8 @@ modify contact illustration people skin to varies of
 delete portfolio.vue 8th line
 
 ## command
+### switch software source
+(May affect GitHub Action npm install, better not switch npm software source, use global VPN)
 (for China) npm install -g nrm & nrm use taobao
 npm create vite@latest name-of-your-project -- --template vue
 npm run & npm run dev
