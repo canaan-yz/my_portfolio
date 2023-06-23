@@ -32,21 +32,14 @@ jobs:
         run: |
           npm install --loglevel verbose
           npm run build
-      - name: Deploy static dist files to server via ssh ftp
-        uses: easingthemes/ssh-deploy@v4.1.8
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.HUAWEICLOUD_SSHKEY_B006 }}
-          REMOTE_HOST: 49.4.82.110
-          REMOTE_PORT: 22
-          REMOTE_USER: root
-          SCRIPT_BEFORE: |
-            whoami
-            pwd
-            mkdir -p /Apps/my_portfolio
-          SOURCE: dist/
-          TARGET: /App/my_portfolio/dist/
-          SCRIPT_AFTER: |
-            ls -al
-            echo $RSYNC_STDOUT
-            echo 'Deploy Complete'
+      - name: Check dist dir
+        run: ls -al dist/
+      - name: Deploy static dist files to server via sftp
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          username: root
+          server: 49.4.82.110
+          port: 22
+          local_path: ./dist/*
+          remote_path: /Apps/my_portfolio/dist/
 
