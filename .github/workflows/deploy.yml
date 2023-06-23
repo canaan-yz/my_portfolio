@@ -1,6 +1,6 @@
 #https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
 #https://github.com/marketplace/actions/setup-node-js-environment
-#https://github.com/marketplace/actions/sftp-deploy  alternative
+#https://github.com/marketplace/actions/sftp-deploy  alternative,doc clearly but has bugs when load pem key
 #https://github.com/marketplace/actions/ssh-deploy
 #Edit on GitHub online with prompt.
 
@@ -40,6 +40,7 @@ jobs:
           username: root
           server: 49.4.82.110
           port: 22
+          ssh_private_key: ${{ secrets.HUAWEICLOUD_SSHKEY_B006 }}
           local_path: ./dist/*
           remote_path: /Apps/my_portfolio/dist/
 
