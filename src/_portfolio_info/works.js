@@ -8,7 +8,7 @@ let works = [
     cover_src: require('./portfolio_old/cover.png'),  //vite-plugin-require
     year: 2019,
     tech_stack: ['Vue2', 'Vue-CLI3', 'Bulma', 'Buefy', 'Webpack4'],
-    git_link: 'https://github.com/',    // the order of links is fixed
+    git_link: 'https://zyzypy.github.io/demo-react-fastapi-mongodb/',    // the order of links is fixed
     doc_link: '/works_info/portfolio_old',
     demo_link: null
   },

@@ -12,6 +12,7 @@
         <p name="tech-stack" class="h-8 mb-4 text-base text-neutral-600 overflow-scroll">
           <span v-for="(tech, i) in work.tech_stack" class="bg-neutral-100 mr-1 md-1 px-1 py-0.5 text-sm text-neutral-500 rounded-sm">{{tech}}</span>
         </p>
+        <!-- there are some design thoughts at the end of this file -->
         <p name="external-links" class="flex flex-nowrap justify-around">
             <a v-for="(item, i) in links"
                :key="i"
@@ -27,10 +28,13 @@
 
 <script setup>
 // import {toRefs} from "vue";
-import githubOutlineIconSrc from '/src/assets/image/social_media/github-outline.svg';
+import GitHubOutlineIcon from '/src/assets/image/social_media/GitHubOutlineIcon.vue';
 import {DocumentIcon, ComputerDesktopIcon as LiveIcon} from '@heroicons/vue/24/outline'
-import {computed, VueElement} from "vue";
+// import {computed, VueElement} from "vue";
 
+
+// revive from father component Portfolio.vue
+// defineProps, equivalent props in father component
 const {work} = defineProps({
     work: {
       type: Object,
@@ -51,20 +55,20 @@ const {work} = defineProps({
 // console.log(work)
 
 
-// import app from 'main.js';app.component('',{})
-// the object below will be compiled as a local component
-let GithubOutlineIcon = {
-  name: 'GithubOutlineIcon',
-  template: `<svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
-    <path stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
-    d="M120.755 170c.03-4.669.059-20.874.059-27.29 0-9.272-3.167-15.339-6.719-18.41 22.051-2.464 45.201-10.863 45.201-49.067 0-10.855-3.824-19.735-10.175-26.683 1.017-2.516 4.413-12.63-.987-26.32 0 0-8.296-2.672-27.202 10.204-7.912-2.213-16.371-3.308-24.784-3.352-8.414.044-16.872 1.14-24.785 3.352C52.457 19.558 44.162 22.23 44.162 22.23c-5.4 13.69-2.004 23.804-.987 26.32C36.824 55.498 33 64.378 33 75.233c0 38.204 23.149 46.603 45.2 49.067-3.551 3.071-6.719 9.138-6.719 18.41 0 6.416.03 22.621.059 27.29M27 130c9.939.703 15.67 9.735 15.67 9.735 8.834 15.199 23.178 10.803 28.815 8.265"/>
-    </svg>`
-}
 const links = [
-  {'icon':GithubOutlineIcon,'link': work.git_link},
+  {'icon':GitHubOutlineIcon,'link': work.git_link},
   {'icon':DocumentIcon,'link': work.doc_link},
   {'icon':LiveIcon,'link': work.demo_link},
 ]
+
+
+// PS: design thoughts about readme.md link and video link
+// In previous version, I maintain project info in src dir in portfolio project, with vue plugin markdown loader.
+// Readme.md should follow by code repo. Image link should use relative path avoid GitHub raw content domain or GitHub
+// account name may be modified someday. GitHub forbidden cors iframe, and api is also inconvenient. Then my Thought is
+// fetch(https://rawcontent.github.com/account/repo/readme.md), then regex replace image url to absolutely path, but my js
+// is poor, then use lib named showdown to covert md string to html. This portfolio project is a static demonstrate website,
+// should not be too much functional like md parsing. Finally, I use gh-pages to simply hold a readme webpage.
 </script>
 
 <style scoped>
