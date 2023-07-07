@@ -5,7 +5,7 @@
 #Edit on GitHub online with prompt.
 
 
-name: Deployed Vue.js Project to Cloud Server via SSH
+name: Deploye to Cloud Server via SSH
 on:
   push:
     branches:
@@ -38,9 +38,9 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: root
-          server: 49.4.82.110
+          server: ${{ vars.ALIBABA_SAS_IP }}
           port: 22
-          ssh_private_key: ${{ secrets.HUAWEICLOUD_SSHKEY_B006 }}
+          ssh_private_key: ${{ secrets.ALIBABA_SAS_PEM }}
           local_path: ./dist/*
           remote_path: /Apps/my_portfolio/dist/
 
