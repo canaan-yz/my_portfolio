@@ -140,7 +140,7 @@
                     <h4 class="">Company Introduction:</h4>
                     <p class="">
                       (I hidde this work to avoid that you may be confused that a backend coder did UI work.)<br/>
-                      Alcohol Delivery app and some part-time works.
+                      Alcohol Delivery app and some part-time WORKS_INFO.
                     </p>
                     <h4>Tech Stack:</h4>
                     <p class="">

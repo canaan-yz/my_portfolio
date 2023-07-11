@@ -7,8 +7,8 @@
         </h1>
         <span class="text-sm">(live demo will be launched recently)</span>
         <p class="text-neutral-500 text-md mt-2 ">
-        Some works are part-time private work with novelty needs; Some for architecture research; Some come from my full-time work.<br/>
-        The complexity of these beside works are much easier than formal full-time work, but also show my abilities. See my formal work experiences on my resume.<br/>
+        Some WORKS_INFO are part-time private work with novelty needs; Some for architecture research; Some come from my full-time work.<br/>
+        The complexity of these beside WORKS_INFO are much easier than formal full-time work, but also show my abilities. See my formal work experiences on my resume.<br/>
         </p>
       </div>
 
@@ -35,9 +35,9 @@
       <section name="cards" class="w-4/5 mt-10 mb-32 flex flex-row flex-wrap justify-center gap-10">
         <!--the effect of justify-around not good on different width screen-->
         <!--component class values will append to component root element class values, no need pass props-->
-        <Work v-for="(work,i) in filteredWorks" :key="i" class=""
+        <WorkCard v-for="(work,i) in filteredWorks" :key="i" class=""
               :work="work">
-        </Work>
+        </WorkCard>
       </section>
     </div>
   </Layout>
@@ -47,14 +47,13 @@
 <script setup>
 import {computed, ref} from "vue";// similar to react useState?
 import Layout from "./Layout.vue";
-import Work from "../components/WorkCard.vue";
-
-import works from "../_portfolio_info/works.js";
-
+import WorkCard from "../components/WorkCard.vue";
 import portfolioIllustration from '../assets/image/portfolio_illustration.svg'
 import {AcademicCapIcon, CodeBracketIcon, Squares2X2Icon, PhotoIcon, CircleStackIcon, CpuChipIcon,
   ComputerDesktopIcon, ArrowTopRightOnSquareIcon, CubeTransparentIcon, DocumentIcon,} from '@heroicons/vue/24/outline'
 
+// config vite.config to allow path access which outside src dir
+import WORKS_INFO from "../../WORKS_INFO.js";
 
 const catalogs = [
   {
@@ -95,15 +94,15 @@ const handleCatalogClick = function(i, catalog, event) {
 
 // computed
 const filteredWorks = computed({
-  // click catalog, and filter works
+  // click catalog, and filter WORKS_INFO
   // calling after handleCatalogClick() currentCatalogIndex changed
   get: ()=>{
     let filteredWorks = []
     let currentCatalogName = catalogs[currentCatalogIndex.value]['name']
     if (currentCatalogName==='All'){
-      filteredWorks = works
+      filteredWorks = WORKS_INFO
     } else {
-      filteredWorks = works.filter((work)=>{
+      filteredWorks = WORKS_INFO.filter((work)=>{
         if (work.catalog.indexOf(currentCatalogName)!==-1){
           return work
         }

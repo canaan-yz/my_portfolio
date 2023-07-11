@@ -11,6 +11,7 @@ module.exports = {
         sans: ['Inter var', 'Inter', 'system-ui', '--apple-system', 'Helvetica', 'Arial', 'sans-serif'],
       },
       gridTemplateRows: {
+        // used by resume page
         // https://tailwindcss.com/docs/grid-template-rows
         '10': 'repeat(10, minmax(0, 1fr))',
         '12': 'repeat(12, minmax(0, 1fr))',

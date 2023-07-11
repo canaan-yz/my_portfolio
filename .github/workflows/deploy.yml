@@ -42,5 +42,5 @@ jobs:
           port: 22
           ssh_private_key: ${{ secrets.ALIBABA_SAS_PEM }}
           local_path: ./dist/*
-          remote_path: /Apps/my_portfolio/dist/
+          remote_path: /Apps/portfolio/dist/
 
