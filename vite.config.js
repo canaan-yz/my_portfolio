@@ -16,5 +16,5 @@ export default defineConfig({
       // config below '.', '..' to allow access of current folder and up one level folder
       allow: ['.']
     }
-  }
+  },
 })

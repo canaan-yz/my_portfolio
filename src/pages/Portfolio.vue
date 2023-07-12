@@ -7,7 +7,7 @@
         </h1>
         <span class="text-sm">(live demo will be launched recently)</span>
         <p class="text-neutral-500 text-md mt-2 ">
-        Some WORKS_INFO are part-time private work with novelty needs; Some for architecture research; Some come from my full-time work.<br/>
+        Some works are part-time private work with novelty needs; Some for architecture research; Some come from my full-time work.<br/>
         The complexity of these beside WORKS_INFO are much easier than formal full-time work, but also show my abilities. See my formal work experiences on my resume.<br/>
         </p>
       </div>

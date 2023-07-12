@@ -1,9 +1,8 @@
 <template>
-  <div name="work-card" class="flex justify-center">
-    <div
-        class="block max-w-sm rounded-lg bg-white shadow-lg">
+    <div name="work-card"
+        class="flex flex-col justify-between max-w-sm rounded-lg bg-white shadow-lg">
       <a :href="work.demo_link" >
-        <img :src="work.cover_src" class="cover rounded-t-lg" alt="cover"/>
+        <img :src="work.cover_src" class="cover block rounded-t-lg" alt="cover"/>
       </a>
       <div class="p-6">
         <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
@@ -23,7 +22,6 @@
         </p>
       </div>
     </div>
-  </div>
 </template>
 
 <script setup>
@@ -35,7 +33,7 @@ import {DocumentIcon, ComputerDesktopIcon as LiveIcon} from '@heroicons/vue/24/o
 
 
 // revive from father component Portfolio.vue
-// defineProps, equivalent props in father component
+// defineProps, equivalent props. keep same structure with WORKS_INFO.js
 const {work} = defineProps({
     work: {
       type: Object,
