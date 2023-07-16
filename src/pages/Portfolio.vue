@@ -5,15 +5,10 @@
         <h1 class="text-neutral-800 sm:text-4xl mt-10">
             Beside Works
         </h1>
-        <span class="text-sm">(live demo will be launched recently)</span>
         <p class="text-neutral-500 text-md mt-2 ">
-        Some works are part-time private work with novelty needs; Some for architecture research; Some come from my full-time work.<br/>
-        The complexity of these beside WORKS_INFO are much easier than formal full-time work, but also show my abilities. See my formal work experiences on my resume.<br/>
+        Some works are part-time private work with novelty needs; Some for architecture research; Some come from my full-time work(partial which allow public).<br/>
+        The complexity of these beside works are much easier than formal full-time work, but also show my abilities. See my formal work experiences on my resume.<br/>
         </p>
-      </div>
-
-      <div name="portfolio-illustration" class="absolute opacity-30 -z-10 -left-20 top-40 w-96 ">
-        <img :src="portfolioIllustration" alt="portfolioIllustration">
       </div>
 
       <section name="catalog-tabs" class="w-1/2 self-center">

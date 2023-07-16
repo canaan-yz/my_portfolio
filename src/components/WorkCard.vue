@@ -1,9 +1,9 @@
 <template>
     <div name="work-card"
         class="flex flex-col justify-between max-w-sm rounded-lg bg-white shadow-lg">
-      <a :href="work.demo_link" >
+      <div class="">
         <img :src="work.cover_src" class="cover block rounded-t-lg" alt="cover"/>
-      </a>
+      </div>
       <div class="p-6">
         <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
           {{ work.title }}
