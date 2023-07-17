@@ -129,7 +129,7 @@ let WORKS_INFO = [
     year: 2015,
     tech_stack: ['Obsoleted', 'Raspberry Pi', 'PM2.5 sensor', 'Material UI', 'High-Chart', 'Flask'],
     git_link: 'https://github.com/zyzypy/raspberrypi_air',
-    doc_link: 'https://zyzypy.github.io/zyzypy/raspberrypi_air',
+    doc_link: 'https://zyzypy.github.io/raspberrypi_air/',
     demo_link: null
   },
   {
