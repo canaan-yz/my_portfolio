@@ -333,7 +333,8 @@ article{
   /*background: url('../assets/image/resume_a4_bg.svg') no-repeat;*/
   /*filter: opacity(0.5);*/
   & section{
-    @apply bg-blue-50;
+    /*!Colour section area to see clearly when developing */
+    /*@apply bg-blue-50;*/
     & h2{
       @apply  text-sm font-medium leading-8 text-slate-500;
     }
