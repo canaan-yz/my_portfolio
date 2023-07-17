@@ -8,7 +8,7 @@
         <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
           {{ work.title }}
         </h5>
-        <p name="tech-stack" class="h-8 mb-4 text-base text-neutral-600 overflow-scroll">
+        <p name="tech-stack" class="h-fit mb-4 text-base text-neutral-600 overflow-scroll">
           <span v-for="(tech, i) in work.tech_stack" class="bg-neutral-100 mr-1 md-1 px-1 py-0.5 text-sm text-neutral-500 rounded-sm">{{tech}}</span>
         </p>
         <!-- there are some design thoughts at draft.md -->

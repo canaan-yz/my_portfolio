@@ -90,11 +90,11 @@ let WORKS_INFO = [
     name: 'ui_works',
     title: 'UI Works',
     catalog: ['UI'],
-    cover_src: 'https://zyzypy.github.io/ui_works/cover.jpg',
+    cover_src: 'https://zyzypy.github.io/portfolio_info/ui_works/cover.jpg',
     year: 2014,
     tech_stack: ['Depreciate', 'UI', 'Photoshop'],
     git_link: null,
-    doc_link: 'https://zyzypy.github.io/ui_works/',
+    doc_link: 'https://zyzypy.github.io/portfolio_info/ui_works/',
     demo_link: null
   },
   {
@@ -105,12 +105,55 @@ let WORKS_INFO = [
     year: 2020,
     tech_stack: ['Obsoleted', 'Vue2 vue-cli', 'Buefy Bulma'],
     git_link: 'https://github.com/zyzypy/portfolio_old',
-    doc_link: 'https://github.com/zyzypy/portfolio_old',
+    doc_link: 'https://zyzypy.github.io/portfolio_old',
     demo_link: null
   },
- 
-  
-  
+  {
+    name: 'blog_hexo',
+    title: 'Blog Old',
+    catalog: ['Frontend', 'Teaching'],
+    // todo https://zyzypy.github.io/blog_hexo  github pages ci will use hexo _config as ci config
+    //  results error https://github.com/zyzypy/blog_hexo/actions/runs/5572800783/jobs/10179245817
+    cover_src: 'https://github.com/zyzypy/blog_hexo/raw/main/cover.jpg',
+    year: 2018,
+    tech_stack: ['Obsoleted', 'Vue2 vue-cli', 'Buefy Bulma'],
+    git_link: 'https://github.com/zyzypy/blog_hexo',
+    doc_link: null,
+    demo_link: 'https://blog-hexo.zyzypy.com/'
+  },
+  {
+    name: 'raspberrypi_air',
+    title: 'Air Quality Detection based Raspberry Pi',
+    catalog: ['Hardware', 'Frontend', 'Backend'],
+    cover_src: 'https://zyzypy.github.io/raspberrypi_air/cover.jpg',
+    year: 2015,
+    tech_stack: ['Obsoleted', 'Raspberry Pi', 'PM2.5 sensor', 'Material UI', 'High-Chart', 'Flask'],
+    git_link: 'https://github.com/zyzypy/raspberrypi_air',
+    doc_link: 'https://zyzypy.github.io/zyzypy/raspberrypi_air',
+    demo_link: null
+  },
+  {
+    name: 'raspberrypi_bullettime',
+    title: 'Bullet Time based on Raspberry Pi',
+    catalog: ['Hardware', 'Backend'],
+    cover_src: 'https://zyzypy.github.io/portfolio_info/raspberrypi_bullettime/cover.gif',
+    year: 2016,
+    tech_stack: ['Raspberry Pi', 'photography'],
+    git_link: null,
+    doc_link: 'https://zyzypy.github.io/portfolio_info/raspberrypi_bullettime/',
+    demo_link: null
+  },
+  {
+    name: 'demo-react-fastapi-mongodb',
+    title: 'Car Info Website Demo',
+    catalog: ['Frontend', 'Backend'],
+    cover_src: 'https://zyzypy.github.io/demo-react-fastapi-mongodb/cover.jpg',
+    year: 2022,
+    tech_stack: ['React', 'TailwindCSS', 'FastAPI', 'MongoDB', 'Docker compose'],
+    git_link: 'https://github.com/zyzypy/demo-react-fastapi-mongodb',
+    doc_link: 'https://zyzypy.github.io/demo-react-fastapi-mongodb/',
+    demo_link: 'https://demo-farm-react.zyzypy.com/'
+  },
 
 
   

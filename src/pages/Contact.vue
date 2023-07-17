@@ -39,7 +39,7 @@ const socials = [
     'name': 'Email',
     'href': 'mailto:canaanyangzheng@gmail.com',
     'iconSrc': emailIcon,
-    'note': 'canaanyangzheng@gmail.com'
+    'note': 'zyzy.py@gmail.com'
   },
   {
     'name': 'Link-In',
@@ -55,15 +55,15 @@ const socials = [
   },
   {
     'name': 'Github',
-    'href': 'https://github.com/canaan-yz',
+    'href': 'https://github.com/zyzypy',
     'iconSrc': githubIcon,
-    'note': 'ID: canaan-yz'
+    'note': 'ID: zyzypy'
   },
   {
     'name': 'Gitee',
     'href': null,
     'iconSrc': noimageIcon,
-    'note': '(abandon) ID: canaan_ge'
+    'note': '(obsoleted) ID: canaan_ge'
   },
   {
     'name': 'WeChat',

@@ -34,9 +34,9 @@
           <h2 class="">Python Web Engineer/Full-Stack Developer/Programming Teacher</h2>
           <p class="">
             <EnvelopeIcon class="w-4 inline-block"/>zyzy.py@gmail.com&nbsp;
-            <LinkIcon class="w-4 inline-block"/>www..com&nbsp;
+            <LinkIcon class="w-4 inline-block"/>www.zyzypy.com&nbsp;
             <MapPinIcon class="w-4 inline-block"/>ZhengZhou,China&nbsp;
-            <DevicePhoneMobileIcon class="w-4 inline-block"/>+1- (00:00~13:00 UTC)&nbsp;
+            <DevicePhoneMobileIcon class="w-4 inline-block"/>+1-442-442-8444(00:00~12:00 UTC)&nbsp;
           </p>
         </section>
 
