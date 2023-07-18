@@ -6,8 +6,8 @@
             Beside Works
         </h1>
         <p class="text-neutral-500 text-md mt-2 ">
-        Some works are part-time private work with novelty needs; Some for architecture research; Some come from my full-time work(partial which allow public).<br/>
-        The complexity of these beside works are much easier than formal full-time work, but also show my abilities. See my formal work experiences on my resume.<br/>
+        Some works are private work with novelty needs; Some for architecture research; Some come from my full-time work(public part).<br/>
+        Though the complexity of these are much easier than full-time work, but also show my abilities. See my formal work experiences on my resume.<br/>
         </p>
       </div>
 
@@ -27,7 +27,7 @@
         </ul>
       </section>
 
-      <section name="cards" class="w-4/5 mt-10 mb-32 flex flex-row flex-wrap justify-center gap-10">
+      <section name="cards" class="w-full mt-10 mb-32 flex flex-row flex-wrap justify-center gap-10">
         <!--the effect of justify-around not good on different width screen-->
         <!--component class values will append to component root element class values, no need pass props-->
         <WorkCard v-for="(work,i) in filteredWorks" :key="i" class=""
