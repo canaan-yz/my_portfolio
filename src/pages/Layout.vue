@@ -66,6 +66,7 @@
   <footer name="footer" class="bg-transparent border-t-2 border-neutral-50">
     <div class="w-full mx-auto container md:p-6 p-4 md:flex md:items-center md:justify-between text-neutral-500">
       <span class="text-sm sm:text-center">©Copyright 2023 YangZheng.</span>
+      <a href="https://goaccess.zyzypy.com" target="_blank">📊</a>
       <span class="text-sm sm:text-center">powered by Vue3+Tailwindcss+Vite.</span>
       </div>
   </footer>

@@ -16,7 +16,7 @@
       <div class="mt-4 mb-8">
           <button class="border-2 border-neutral-900 text-neutral-900 rounded-md px-4 py-1 text-xl block mx-auto
                     hover:border-neutral-500 hover:text-neutral-500 hover:bg-neutral-100 ">
-            <a href="/_resume/YangZheng's Portfolio.pdf" download="ZhengYang_Python_Resume.pdf" class="" target="_blank" >
+            <a href="/RESUME/YangZhengCV.pdf" download="YangZhengCV.pdf" class="" target="_blank" >
               Download CV
             </a>
           </button>
@@ -30,7 +30,7 @@
                       grid grid-flow-col grid-rows-24 grid-cols-3 gap-2 gap-x-6">
 
         <section name="header" class="row-span-2 col-span-full">
-          <h1 class="text-2xl font-medium text-neutral-700">Zheng Yang</h1>
+          <h1 class="text-xl font-medium text-neutral-700">Mr.Yang Zheng</h1>
           <h2 class="">Python Web Engineer/Full-Stack Developer/Programming Teacher</h2>
           <p class="">
             <EnvelopeIcon class="w-4 inline-block"/>zyzy.py@gmail.com&nbsp;
@@ -55,7 +55,7 @@
             <ol name="Teaching" class="">
               <li class="">
                 <div class=""></div>
-                <time class="">2022</time>
+                <time class="">2018~2022</time>
                 <h3 class="">Beijing XueJiaAo Education</h3><span class="">Programming Teacher</span>
                 <h4 class="">Company Introduction:</h4>
                 <p class="">
@@ -63,21 +63,19 @@
                 </p>
                 <h4>Tech Stack:</h4>
                 <p class="">
-                  Python, Django, Frontend. Computer foundation courses etc.
+                  Python, Django, Frontend, Computer major courses, etc.
                 </p>
-                <h4>My responsibility:</h4>
+                <h4>Work Achievement:</h4>
                 <p class="">
-                  •"Python from Zero Foundation to Employment in 20 Weeks" training course.<br/>
-                  •"Frontend from Zero Foundation to Employment in 20 Weeks" training course(first 70% syllabus).<br/>
-                  •"Python Django Video Project" training for new teachers in universities.<br/>
-                  •"Python Crawls and Visualization" practical training in Henan University,<br/>
-                  Zhengzhou College of Aeronautics and Shenyang University of Technology.<br/>
-                  •"Python Foundation Coding" required courses, "Software Testing", "Server Virtualization" elective courses in
-                  Zhengzhou Tourism Vocational College.<br/>
-                  •"Raspberrypi Air Quality Detector" propaganda course in Tiktok.<br/>
-                  •"H5 Page Production Competition" in Shanxi Agricultural College.<br/>
-                  Sum up: Teaching plan development, Teaching(mainly python on campus or online), Students Q&A,
-                  Publicity classes, Students assessment.
+                  •"Python Systematic Training in 20 Weeks" training course.<br/>
+                  •"Frontend Systematic Training to Employment in 20 Weeks" training course(first 70% syllabus).<br/>
+                  •"Python Django Video Project" training for newly hired teachers.<br/>
+                  •"Python Crawlers and Visualization" practical training for students.<br/>
+                  •"Software Testing", "Server Virtualization" elective courses.<br/>
+                  Have teaching experiences in Henan University, Zhengzhou College of Aeronautics,
+                  Zhengzhou Tourism Vocational College, Shenyang University of Technology.<br/>
+                  Sum up: teaching plan development, teaching(mainly python on campus or online),
+                  students Q&A, students assessment.
                 </p>
               </li>
             </ol>
@@ -90,20 +88,22 @@
                     <h4 class="">Company Introduction:</h4>
                     <p class="">
                         Xuchang has the advantage of the lowest price of wig in the world. Through foreign trade,
-                        the company has grown rapidly. Opened more than 20 stores including self-operated malls,
-                        eBay stores, Amazon stores, and AliExpress stores, and placed advertisements on Google and YouTube.
-                        No matter where you buy wigs online, it's the same boss behind.
+                        the company has grown rapidly, monopolized the market. Opened more than 20 stores including self-operated malls,
+                        eBay stores, Amazon stores and AliExpress stores, and placed advertisements on Google and YouTube.
+                        No matter where you buy wigs online, it's the same company behind.
                     </p>
                     <h4>Tech Stack:</h4>
                     <p class="">
-                      Odoo, Postgresql, python scenario, E-commerce platform API, Thermal printer
+                      Odoo, Postgresql, Complex business logic
                     </p>
                     <h4>My responsibility:</h4>
                     <p class="">
-                        Due to the large number of stores and the rapid growth of orders, it was difficult for the sales staff to handle.<br/>
+                        Due to the large number of stores and the rapid growth of orders, it was difficult for the sales staffs to handle.<br/>
                         I participate in development of Odoo OA to unify the business process.
-                        Request the API of each e-commerce platform to pull the order information and extract the public structure and store it in the database,
-                        then sales team process orders, and then orders go to the finance department to generate bills, finally go to the logistics department to generate the waybill.<br/>
+                        The approximate process is that request the API of each e-commerce platform to pull the order information down,
+                        extract them to the common structure, and store them to the ERP.
+                        Then sales team process orders, and then orders go to the finance department, finally go to the shipping department.
+                        Every step has a lot of concrete business logic.<br/>
                     </p>
                 </li>
             </ol>
@@ -115,19 +115,19 @@
                     <h3 class="">Synchronized Classroom</h3><span class="">Python Backend Developer</span>
                     <h4 class="">Company Introduction:</h4>
                     <p class="">
-                      A primary education app, including subjects such as Chinese, mathematics, and English.
+                      A primary education app, including subjects such as Mathematics and English.
                       Benefits from collaborating with China Mobile and schools in Henan, during its heyday,
-                      there were 200k active users who were online for more than 2hr a day.
+                      there were over 200k active users who were online for more than 2 hours a day.
                     </p>
                     <h4>Tech Stack:</h4>
                     <p class="">
-                        Django, MySQL, Vue, Docker. Iterative incremental development.
+                        Django, MySQL, Vue, Docker. Complex business logic.
                     </p>
                     <h4>My responsibility:</h4>
                     <p class="">
-                      Mainly responsible for the functional development of the primary school English module,
-                      Collaborate with PM,editors,front-end developers and testers colleagues.<br/>
-                      I developed APIs about English teaching material management, test paper, school competition activities, teacher end management etc.<br/>
+                      Developing and collaborating with PMs, front-end developers and testers.<br/>
+                      I developed APIs about student-end test paper, school competition activities,
+                      teacher-end material management, etc.<br/>
                     </p>
                 </li>
             </ol>
@@ -195,15 +195,15 @@
           <h2>Skill</h2>
           <ul>
             <li>
-              <span class="_a">proficient</span><span class="_b">experienced</span><span class="_c">understand</span><span class="_c _z">lack energy or dislike</span>
+              <span class="_a">Proficient</span><span class="_b">Experienced</span><span class="_c">Understand</span><span class="_c _z">Not good or Dislike</span>
             </li>
             <li>
               <h4 class="mt-0">Production</h4>
-              <span class="_a">Demand Analysis</span><span class="_z">UI design</span><span class="_a">Doc</span><span class="_c">Project Management</span>
+              <span class="_a">Demand Analysis</span><span class="_z">UI design</span><span class="_a">Doc</span><span class="_c">Team Management</span>
             </li>
             <li>
               <h4 class="">Frontend</h4>
-              <span class="_a">HTML/CSS/JS/JS es5+</span><span class="_z">Bootstrap</span><span>TailwindCSS</span><span class="_c">NodeJS</span><span class="_b">VUE</span><span class="_c">React</span>
+              <span class="_a">HTML/CSS/JS</span><span class="_z">Bootstrap</span><span>TailwindCSS</span><span class="_c">NodeJS</span><span class="_b">VUE</span><span class="_c">React</span>
               <span class="_b">Vite Webpack</span>
             </li>
             <li>
@@ -214,11 +214,11 @@
             </li>
             <li>
                 <h4 class="">Deployment</h4>
-                <span class="_b">Linux/Ubuntu</span><span class="_b">Docker</span><span class="_b">CI CD</span><span class="_b">AWS/Alibaba Cloud</span>
+                <span class="_b">Linux/Ubuntu</span><span class="_b">Docker</span><span class="_b">CI/CD</span><span class="_b">AWS/Alibaba Cloud</span>
             </li>
             <li>
               <h4 class="">Coordination</h4>
-              <span class="_a">Git</span><span class="_b">Jira/Github Actions</span>
+              <span class="_a">Git</span><span class="_b">Space/YourTrack</span>
             </li>
             <li>
               <h4 class="">Others</h4>
