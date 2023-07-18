@@ -4,24 +4,34 @@
 @tailwind utilities;
 
 
-/* global theme config is in tailwind.config.js */
 
-/*:root {*/
-/*  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;*/
-/*  line-height: 1.5;*/
-/*  font-weight: 400;*/
+/*Tailwindui component specific font "Inter". */
+/*Chrome same-site=lax http header checking.
+@import url('https://fonts.cdnfonts.com/css/inter');  . can't use cdn with no credential.  https://www.cdnfonts.com/inter.font
+approach1: <link cross-origin='anonymous'>
+approach2: https://www.cnblogs.com/xbdehaohao/articles/16738560.html
+approach3: https://www.pidancode.com/a/16831703615466030.html*/
+@font-face {
+    font-family: 'Inter';
+    src: url('./assets/font/Inter-Regular.ttf');
+}
 
-/*  color-scheme: light dark;*/
-/*  color: rgba(255, 255, 255, 0.87);*/
-/*  background-color: #ffffff;*/
+/*Pacifico, only used in Home.vue*/
+/*@import url('https://fonts.cdnfonts.com/css/pacifico'); cors forbidden. https://www.cdnfonts.com/pacifico.font*/
+@font-face {
+    font-family: 'Pacifico';
+    src: url('./assets/font/Pacifico-Regular.ttf');
+}
 
-/*  font-synthesis: none;*/
-/*  text-rendering: optimizeLegibility;*/
-/*  -webkit-font-smoothing: antialiased;*/
-/*  -moz-osx-font-smoothing: grayscale;*/
-/*  -webkit-text-size-adjust: 100%;*/
+:root {
+  font-family: 'Inter var', 'Inter', 'system-ui', '--apple-system', 'Helvetica', 'Arial', 'sans-serif';
 
-/*  margin: 0;*/
-/*  padding: 0;*/
-/*}*/
+  /*front rendering, focus on quality*/
+  font-synthesis: weight;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  /*-webkit-text-size-adjust: 100%;*/
+
+}
 

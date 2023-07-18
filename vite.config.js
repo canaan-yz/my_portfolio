@@ -11,6 +11,7 @@ export default defineConfig({
     vitePluginRequire.default(), // sometimes need .default()
   ],
   server: {
+    host: true,  // vite --host 0.0.0.0
     fs: {
       // Vite default only allow access file in src dir,
       // config below '.', '..' to allow access of current folder and up one level folder

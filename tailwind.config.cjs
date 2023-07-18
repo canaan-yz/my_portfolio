@@ -7,9 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Inter var', 'Inter', 'system-ui', '--apple-system', 'Helvetica', 'Arial', 'sans-serif'],
-      },
+      // fontFamily: {
+      //   sans: ['Inter var', 'Inter', 'system-ui', '--apple-system', 'Helvetica', 'Arial', 'sans-serif'],
+      // },
       gridTemplateRows: {
         // used by resume page
         // https://tailwindcss.com/docs/grid-template-rows

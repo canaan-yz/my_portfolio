@@ -2,13 +2,16 @@
   <div id="home">
     <Layout>
       <!--big title-->
+      <!--Effect different between Windows and MacOS in same version Chrome Browser!
+          Windows didn't mistake dark mode, delete style which start with `dark:`
+          Need testing and adjusting on both platforms.-->
       <div class="mx-auto max-w-3xl py-32 sm:py-48 md:py-56">
         <div class="text-center">
-          <h1 class="text-4xl tracking-tight text-neutral-900 sm:text-6xl">
-            <span class="_shake-hand-animation inline-block sm:text-5xl">👋🏼</span>
+          <h1 class="sm:text-6xl tracking-tight text-neutral-900 ">
+            <span class="_shake-hand-animation inline-block sm:text-4xl">👋🏼</span>
             <span class="_big_title" title='/ʈʂɤŋ/ /jæŋ/ pronounce similar to "Jane Young"'>
-              Hello, I'm Mr.Yang Zheng</span><br/>
-            <p class="sm:text-5xl mt-4 leading-8">A Python Fullstack Engineer</p>
+              Hello, I'm Yang Zheng</span><br/>
+            <p class="sm:text-5xl mt-4 leading-8">A Python Full-Stack Web Developer</p>
           </h1>
           <p class="mt-4 text-lg leading-8 text-neutral-600">
             Major in Web Backend development & Programing Teaching, with a little UI background.
@@ -33,10 +36,9 @@ import {MapPinIcon } from '@heroicons/vue/24/outline'
 </script>
 
 <style scoped>
-@import url('https://fonts.cdnfonts.com/css/pacifico');
 
 ._big_title {
-  font-family: Pacifico, cursive;
+  font-family: 'Pacifico', cursive, sans-serif;
   font-weight: bold;
   margin-bottom: 2rem;
 }

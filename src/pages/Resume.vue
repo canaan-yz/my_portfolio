@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div id="resume" class="container mx-auto bg-transparent h-[500mm]">
+    <div id="resume" class="container mx-auto bg-transparent  h-[400mm] xl:h-[600mm]">
       <div name="title" class="text-center">
         <h1 class="text-neutral-800 sm:text-4xl mt-10">
             Resume
@@ -276,7 +276,9 @@
         </section>
 
       </article>
-<!--        todo: popover    todo: Q&A-->
+
+
+      <!-- todo: popover    todo: Q&A-->
 
 
     </div>
