@@ -154,7 +154,17 @@ let WORKS_INFO = [
     doc_link: 'https://zyzypy.github.io/demo-react-fastapi-mongodb/',
     demo_link: 'https://demo-farm-react.zyzypy.com/'
   },
-
+  {
+    name: 'portfolio',
+    title: 'The Site You Are Looking',
+    catalog: ['Frontend'],
+    cover_src: require('./cover.jpg'),
+    year: 2022,
+    tech_stack: ['Vue3', 'TailwindCSS', 'Vite', 'GitHub Action'],
+    git_link: 'https://github.com/zyzypy/portfolio',
+    doc_link: 'https://github.com/zyzypy/portfolio/blob/main/README.md',
+    demo_link: null
+  },
 
   
 ]

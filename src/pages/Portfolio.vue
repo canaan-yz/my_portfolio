@@ -103,6 +103,10 @@ const filteredWorks = computed({
         }
       })
     }
+    // sort by year reverse
+    filteredWorks.sort(function (a,b){
+      return b.year - a.year
+    })
     return filteredWorks
   }
 })
