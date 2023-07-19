@@ -114,7 +114,8 @@ let WORKS_INFO = [
     catalog: ['Frontend', 'Teaching'],
     // todo https://zyzypy.github.io/blog_hexo  github pages ci will use hexo _config as ci config
     //  results error https://github.com/zyzypy/blog_hexo/actions/runs/5572800783/jobs/10179245817
-    cover_src: 'https://github.com/zyzypy/blog_hexo/raw/main/cover.jpg',
+    // cover_src: 'https://github.com/zyzypy/blog_hexo/raw/main/cover.jpg',   timeout via China IP
+    cover_src: require('./README_IMG/blog_hexo-cover.jpg'),
     year: 2018,
     tech_stack: ['Obsoleted', 'Vue2 vue-cli', 'Buefy Bulma'],
     git_link: 'https://github.com/zyzypy/blog_hexo',
