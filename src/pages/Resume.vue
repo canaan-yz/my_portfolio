@@ -59,7 +59,7 @@
                 <h3 class="">Beijing XueJiaAo Education</h3><span class="">Programming Teacher</span>
                 <h4 class="">Company Introduction:</h4>
                 <p class="">
-                  The unique authorization of Oracle Education in China, operate IT training and school-enterprise cooperation teaching.
+                  The first authorization of Oracle Education in China, operate IT training and school-enterprise cooperation teaching.
                 </p>
                 <h4>Tech Stack:</h4>
                 <p class="">

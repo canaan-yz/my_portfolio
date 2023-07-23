@@ -43,7 +43,7 @@ const socials = [
   },
   {
     'name': 'Link-In',
-    'href': 'https://linkedin.com/in/zheng-yang-1a7627267',
+    'href': 'https://linkedin.com/in/zyzypy',
     'iconSrc': linkedinIcon,
     'note': null
   },
