@@ -186,8 +186,8 @@
         </section>
 
         <section name="avatar" class="row-span-2 col-span-1 overflow-hidden">
-            <div class="relative rounded-full w-20 h-20 overflow-hidden mx-auto">
-              <img :src="AvatarSrc" class="absolute transform scale-150 top-7 left-1" alt="avatar">
+            <div class="relative rounded-full w-20 h-20 overflow-hidden mx-auto ">
+              <img :src="AvatarSrc" class="transform scale-100" alt="avatar">
             </div>
         </section>
 
@@ -240,7 +240,7 @@
           <h2>Certification</h2>
           <ul>
             <li class="mb-1">
-              <h3>PCPP1</h3><span class="float-right">Python Institute</span><br/>
+              <h3>PCPP1</h3><span class="float-right">OpenEDG Python Institute</span><br/>
               <p class="">Certified Professional in Python Programming 1</p>
             </li>
             <li class="mb-1">
