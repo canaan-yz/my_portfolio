@@ -6,7 +6,7 @@
             Beside Works
         </h1>
         <p class="text-neutral-500 text-md mt-2 ">
-        Some works are private work with novelty needs; Some for architecture research; Some come from my full-time work(public part).<br/>
+        Some works are personal work with novelty needs; Some for architecture research; Some come from my full-time work(public part).<br/>
         Though the complexity of these are much easier than full-time work, but also show my abilities. See my formal work experiences on my resume.<br/>
         </p>
       </div>

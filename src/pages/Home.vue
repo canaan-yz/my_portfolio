@@ -9,7 +9,7 @@
         <div class="text-center">
           <h1 class="sm:text-6xl tracking-tight text-neutral-900 ">
             <span class="_shake-hand-animation inline-block sm:text-4xl">👋🏼</span>
-            <span class="_big_title" title='/ʈʂɤŋ/ /jæŋ/ pronounce similar to "Jane Young"'>
+            <span class="_big_title">
               Hello, I'm Yang Zheng</span><br/>
             <p class="sm:text-5xl mt-4 leading-8">A Python Full-Stack Web Developer</p>
           </h1>

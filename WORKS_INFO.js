@@ -26,7 +26,7 @@ let WORKS_INFO = [
     catalog: ['Teaching'],
     cover_src: 'https://zyzypy.github.io/portfolio_info/python_basic/cover.jpg',
     year: 2020,
-    tech_stack: ['Python'],
+    tech_stack: ['Python', 'pygame lib'],
     git_link: null,
     doc_link: 'https://zyzypy.github.io/portfolio_info/python_basic/',
     demo_link: 'https://buckets.zyzypy.com/python_basic/'
@@ -37,9 +37,9 @@ let WORKS_INFO = [
     catalog: ['Teaching'],
     cover_src: 'https://zyzypy.github.io/portfolio_info/python_flask/cover.jpg',
     year: 2018,
-    tech_stack: ['OBSOLETED', 'Python', 'Flask'],
+    tech_stack: ['Python', 'Flask'],
     git_link: null,
-    doc_link: 'https://zyzypy.github.io/portfolio_info/python_django/',
+    doc_link: 'https://zyzypy.github.io/portfolio_info/python_flask/',
     demo_link: null    // todo blog link
   },
   {
@@ -59,7 +59,7 @@ let WORKS_INFO = [
     catalog: ['Teaching'],
     cover_src: 'https://zyzypy.github.io/portfolio_info/python_spider/cover.jpg',
     year: 2021,
-    tech_stack: ['Python', 'Crawler/Spider'],
+    tech_stack: ['Python', 'requests lib', 'xpath', 'pychart lib'],
     git_link: null,
     doc_link: 'https://zyzypy.github.io/portfolio_info/python_spider/',
     demo_link: 'https://buckets.zyzypy.com/python_spider/'
@@ -81,7 +81,7 @@ let WORKS_INFO = [
     catalog: ['UI', 'Backend', 'Frontend'],
     cover_src: 'https://zyzypy.github.io/ui_material/README_IMG/cover.jpg',
     year: 2015,
-    tech_stack: ['Depreciate', 'Python Web', 'Flask', 'masonry.js', 'Bootstrap'],
+    tech_stack: ['Flask', 'masonry.js', 'Bootstrap'],
     git_link: 'https://github.com/zyzypy/ui_material',
     doc_link: 'https://zyzypy.github.io/ui_material/',
     demo_link: 'https://ui-material.zyzypy.com'
@@ -92,7 +92,7 @@ let WORKS_INFO = [
     catalog: ['UI'],
     cover_src: 'https://zyzypy.github.io/portfolio_info/ui_works/cover.jpg',
     year: 2014,
-    tech_stack: ['Depreciate', 'UI', 'Photoshop'],
+    tech_stack: ['UI', 'Photoshop'],
     git_link: null,
     doc_link: 'https://zyzypy.github.io/portfolio_info/ui_works/',
     demo_link: null
@@ -103,7 +103,7 @@ let WORKS_INFO = [
     catalog: ['Frontend'],
     cover_src: 'https://zyzypy.github.io/portfolio_old/cover.jpg',
     year: 2020,
-    tech_stack: ['Obsoleted', 'Vue2 vue-cli', 'Buefy Bulma'],
+    tech_stack: ['Vue2 vue-cli', 'Buefy Bulma'],
     git_link: 'https://github.com/zyzypy/portfolio_old',
     doc_link: 'https://zyzypy.github.io/portfolio_old',
     demo_link: null
@@ -117,18 +117,18 @@ let WORKS_INFO = [
     // cover_src: 'https://github.com/zyzypy/blog_hexo/raw/main/cover.jpg',   timeout via China IP
     cover_src: require('./README_IMG/blog_hexo-cover.jpg'),
     year: 2018,
-    tech_stack: ['Obsoleted', 'Vue2 vue-cli', 'Buefy Bulma'],
+    tech_stack: ['blog'],
     git_link: 'https://github.com/zyzypy/blog_hexo',
     doc_link: null,
     demo_link: 'https://blog-hexo.zyzypy.com/'
   },
   {
     name: 'raspberrypi_air',
-    title: 'Air Quality Detection based Raspberry Pi',
+    title: 'Air Quality Measuring based on Raspberry Pi',
     catalog: ['Hardware', 'Frontend', 'Backend'],
     cover_src: 'https://zyzypy.github.io/raspberrypi_air/cover.jpg',
     year: 2015,
-    tech_stack: ['Obsoleted', 'Raspberry Pi', 'PM2.5 sensor', 'Material UI', 'High-Chart', 'Flask'],
+    tech_stack: ['Raspberry Pi', 'PM2.5 sensor', 'Material UI', 'High-Chart', 'Flask'],
     git_link: 'https://github.com/zyzypy/raspberrypi_air',
     doc_link: 'https://zyzypy.github.io/raspberrypi_air/',
     demo_link: null
